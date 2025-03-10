@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1-сынып оқушыларына арналған онлайн оқу</title>
+  <link rel="stylesheet" href="Styleofclasses\1st.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">1-сынып Онлайн Оқу</h1>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home">Басты бет</a></li>
+          <li><a href="#kazakh">Қазақ тілі</a></li>
+          <li><a href="#reading">Әдебиеттік оқу</a></li>
+          <li><a href="#math">Математика</a></li>
+          <li><a href="#world">Дүниетану</a></li>
+          <li><a href="#self-awareness">Өзін-өзі тану</a></li>
+          <li><a href="#writing">Сауат ашу</a></li>
+          <li><a href="#nature">Жаратылыстану</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Қош келдіңіз!</h2>
+      <p>Бұл сайт 1-сынып оқушыларына арналған онлайн оқу платформасы.</p>
+    </div>
+  </section>
+
+  <!-- Қазақ тілі -->
+  <section id="kazakh" class="subject">
+    <div class="container">
+      <div class="subject-content">
+        <div class="subject-title">
+          <h2>Қазақ тілі</h2>
+        </div>
+        <div class="subject-pdf">
+          <embed src="C:\Users\user\Desktop\Diploma work\1ші сынып\қазақ тілі.pdf" type="application/pdf" width="100%" height="400px">
+        </div>
+      </div>
+      <div class="exercise">
+        <h3>Тест:</h3>
+        <p>Алфавиттегі 3-ші әріп қандай?</p>
+        <input type="text" id="kazakh-answer">
+        <button onclick="checkKazakhAnswer()">Тексеру</button>
+        <p id="kazakh-result"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Әдебиеттік оқу -->
+  <section id="reading" class="subject">
+    <div class="container">
+      <div class="subject-content">
+        <div class="subject-title">
+          <h2>Әдебиеттік оқу</h2>
+        </div>
+        <div class="subject-pdf">
+          <embed src="C:\Users\user\Desktop\Diploma work\1ші сынып\қазақ тілі.pdf" type="application/pdf" width="100%" height="400px">
+        </div>
+      </div>
+      <div class="exercise">
+        <h3>Тест:</h3>
+        <p>Мәтінді оқыңыз: "Көбелек гүлге қонды."</p>
+        <p>Мәтінде неше сөз бар?</p>
+        <input type="text" id="reading-answer">
+        <button onclick="checkReadingAnswer()">Тексеру</button>
+        <p id="reading-result"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Математика -->
+  <section id="math" class="subject">
+    <div class="container">
+      <div class="subject-content">
+        <div class="subject-title">
+          <h2>Математика</h2>
+        </div>
+        <div class="subject-pdf">
+          <embed src="C:\Users\user\Desktop\Diploma work\1ші сынып\қазақ тілі.pdf" type="application/pdf" width="100%" height="400px">
+        </div>
+      </div>
+      <div class="exercise">
+        <h3>Тест:</h3>
+        <p>4 + 5 = <input type="text" id="math-answer"></p>
+        <button onclick="checkMathAnswer()">Тексеру</button>
+        <p id="math-result"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Дүниетану -->
+  <section id="world" class="subject">
+    <div class="container">
+      <div class="subject-content">
+        <div class="subject-title">
+          <h2>Дүниетану</h2>
+        </div>
+        <div class="subject-pdf">
+          <embed src="C:\Users\user\Desktop\Diploma work\1ші сынып\қазақ тілі.pdf" type="application/pdf" width="100%" height="400px">
+        </div>
+      </div>
+      <div class="exercise">
+        <h3>Тест:</h3>
+        <p>Қай мезгілде қар жауады?</p>
+        <input type="text" id="world-answer">
+        <button onclick="checkWorldAnswer()">Тексеру</button>
+        <p id="world-result"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Өзін-өзі тану -->
+  <section id="self-awareness" class="subject">
+    <div class="container">
+      <div class="subject-content">
+        <div class="subject-title">
+          <h2>Өзін-өзі тану</h2>
+        </div>
+        <div class="subject-pdf">
+          <embed src="C:\Users\user\Desktop\Diploma work\1ші сынып\қазақ тілі.pdf" type="application/pdf" width="100%" height="400px">
+        </div>
+      </div>
+      <div class="exercise">
+        <h3>Тест:</h3>
+        <p>Сен өзіңді қалай сезінесің?</p>
+        <textarea id="self-awareness-answer"></textarea>
+        <button onclick="checkSelfAwarenessAnswer()">Жауап беру</button>
+        <p id="self-awareness-result"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Сауат ашу -->
+  <section id="writing" class="subject">
+    <div class="container">
+      <div class="subject-content">
+        <div class="subject-title">
+          <h2>Сауат ашу</h2>
+        </div>
+        <div class="subject-pdf">
+          <embed src="C:\Users\user\Desktop\Diploma work\1ші сынып\қазақ тілі.pdf" type="application/pdf" width="100%" height="400px">
+        </div>
+      </div>
+      <div class="exercise">
+        <h3>Тест:</h3>
+        <p>Сөзді жазыңыз: "АНА".</p>
+        <input type="text" id="writing-answer">
+        <button onclick="checkWritingAnswer()">Тексеру</button>
+        <p id="writing-result"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Жаратылыстану -->
+  <section id="nature" class="subject">
+    <div class="container">
+      <div class="subject-content">
+        <div class="subject-title">
+          <h2>Жаратылыстану</h2>
+        </div>
+        <div class="subject-pdf">
+          <embed src="C:\Users\user\Desktop\Diploma work\1ші сынып\қазақ тілі.pdf" type="application/pdf" width="100%" height="400px">
+        </div>
+      </div>
+      <div class="exercise">
+        <h3>Тест:</h3>
+        <p>Күн мен түн неліктен ауысады?</p>
+        <input type="text" id="nature-answer">
+        <button onclick="checkNatureAnswer()">Тексеру</button>
+        <p id="nature-result"></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 1-сынып Онлайн Оқу</p>
+    </div>
+  </footer>
+
+  <script src="JS\1st.js"></script>
+</body>
+</html>
