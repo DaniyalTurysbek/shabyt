@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Қазақ тілі 9-ші сынып</title>
+    <link rel="stylesheet" href="kaz9.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Қазақ тілі 9-ші сынып</h1>
+        <p>Барлық 80 сабақтарға арналған YouTube видео</p>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Сабақты іздеу..." onkeyup="filterLessons()">
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Lessons Section -->
+        <section class="lessons-section">
+            <h2>Сабақтар тізімі</h2>
+            <div class="lesson-grid">
+                <!-- Lesson 1 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=g0O6LRi_rX4&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=1')">
+                    <h3>Сабақ 1</h3>
+                    <p>Қазақ тілі 5-сынып</p>
+                </div>
+                <!-- Lesson 2 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=YKRyZeWPcPE&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=2')">
+                    <h3>Сабақ 2</h3>
+                    <p>Жеті жұрттың тілін біл</p>
+                </div>
+                <!-- Lesson 3 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=7IWl-6hu8HU&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=3')">
+                    <h3>Сабақ 3</h3>
+                    <p>Сөйлеу мәдениеті</p>
+                </div>
+                <!-- Lesson 4 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=p6nnKjMoG1A&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=4')">
+                    <h3>Сабақ 4</h3>
+                    <p>Сөйлеу мәдениеті. Сыпайылық. Әдептілік</p>
+                </div>
+                <!-- Lesson 5 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=UEa5sh0JY8k&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=5')">
+                    <h3>Сабақ 5</h3>
+                    <p>Тілі байдың ой да бай</p>
+                </div>
+                <!-- Lesson 6 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=HlpbxM6SXFk&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=6')">
+                    <h3>Сабақ 6</h3>
+                    <p>Киім стильдері</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=qDMcT_RwwZ4&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=7')">
+                    <h3>Сабақ 7</h3>
+                    <p>Қазақтың ұлттық киімдері</p>
+                </div>
+                <!-- Lesson 8 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=fY7tr9mW3e8&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=8')">
+                    <h3>Сабақ 8</h3>
+                    <p>Қазақстандық дизайнерлер</p>
+                </div>
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=Ydi6aNUqims&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=9')">
+                    <h3>Сабақ 9</h3>
+                    <p>Талғам</p>
+                </div>
+                <!-- Lesson 2 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=zWlIlcpLSfk&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=10')">
+                    <h3>Сабақ 10</h3>
+                    <p>Киім кию мәдениеті</p>
+                </div>
+                <!-- Lesson 3 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=NFtl8GrGzV4&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=11')">
+                    <h3>Сабақ 11</h3>
+                    <p>Балаға ат қою</p>
+                </div>
+                <!-- Lesson 4 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=R5-9AiYFB-A&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=12')">
+                    <h3>Сабақ 12</h3>
+                    <p>Бесікке салу</p>
+                </div>
+                <!-- Lesson 5 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=l8chy01k0tg&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=13')">
+                    <h3>Сабақ 13</h3>
+                    <p>Тұсау кесу</p>
+                </div>
+                <!-- Lesson 6 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=8c-v5AyriaA&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=14')">
+                    <h3>Сабақ 14</h3>
+                    <p>Қазақ тілі 5 сынып</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=Ct7-cB3oXs0&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=15')">
+                    <h3>Сабақ 15</h3>
+                    <p>Адам және табиғат</p>
+                </div>
+                <!-- Lesson 8 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=iv9eEBUQH1U&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=16')">
+                    <h3>Сабақ 16</h3>
+                    <p>Қазақстанның қызыл кітабы</p>
+                </div>
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=432SMab5eaw&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=17')">
+                    <h3>Сабақ 17</h3>
+                    <p>Бақа мен үйрек</p>
+                </div>
+                <!-- Lesson 2 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=_wghl4vZF9Y&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=18')">
+                    <h3>Сабақ 18</h3>
+                    <p>Адам және жыртқыш аң</p>
+                </div>
+                <!-- Lesson 3 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=hr9DhS0N-NQ&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=19')">
+                    <h3>Сабақ 19</h3>
+                    <p>Қазақ тілі 5 сынып</p>
+                </div>
+                <!-- Lesson 4 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=B7SvTzVl6zY&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=20')">
+                    <h3>Сабақ 20</h3>
+                    <p>Өсімдік және музыка</p>
+                </div>
+                <!-- Lesson 5 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=SQvoVKPeL8g&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=21')">
+                    <h3>Сабақ 21</h3>
+                    <p>Ғажайып ағаштар</p>
+                </div>
+                <!-- Lesson 6 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=ia8N669TfYY&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=22')">
+                    <h3>Сабақ 22</h3>
+                    <p>Миуалы ағаш</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=PocdyuOT0mU&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=23')">
+                    <h3>Сабақ 23</h3>
+                    <p>Қазақ тілі 5 сынып</p>
+                </div>
+                <!-- Lesson 8 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=yIphfVo2Hy4&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=24')">
+                    <h3>Сабақ 24</h3>
+                    <p>Бос уақытты тиімді пайдалану</p>
+                </div>
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=O49hNhwf4PA&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=25')">
+                    <h3>Сабақ 25</h3>
+                    <p>Қазақ тілі 5 сынып</p>
+                </div>
+                <!-- Lesson 5 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=2pHL9gNYado&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=26')">
+                    <h3>Сабақ 26</h3>
+                    <p>Уақыт алтыннан қымбат</p>
+                </div>
+                <!-- Lesson 6 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=GNxX1gp0Vrk&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=27')">
+                    <h3>Сабақ 27</h3>
+                    <p>Хобби</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=rpt8Yvq814M&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=28')">
+                    <h3>Сабақ 28</h3>
+                    <p>Үйірменің үйретері көп</p>
+                </div>
+                <!-- Lesson 5 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=hScxMFC4fDY&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=29')">
+                    <h3>Сабақ 29</h3>
+                    <p>Ұлы адамдардың өмірінен</p>
+                </div>
+                <!-- Lesson 6 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=LcODvf-dqyI&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=30')">
+                    <h3>Сабақ 30</h3>
+                    <p>Шаршамаймын десең</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=oaYNvDdREJU&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=31')">
+                    <h3>Сабақ 31</h3>
+                    <p>Мен еліктейтін кейіпкерлердің сүйікті ісі</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=BUS2gDrJ6aw&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=32')">
+                    <h3>Сабақ 32</h3>
+                    <p>Фантазия</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=Xc1AhJeZRe4&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=33')">
+                    <h3>Сабақ 33</h3>
+                    <p>Керқұла атты Кендебай</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=w__niGzBFB8&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=34')">
+                    <h3>Сабақ 34</h3>
+                    <p>Ер Төстік</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=s94ZCYzMLhY&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=35')">
+                    <h3>Сабақ 35</h3>
+                    <p>Қиял мен аңыз</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=rNT3McUvuxA&list=PL6ixOsMszttkktYnErQnt6-8oHs0FkUqS&index=36')">
+                    <h3>Сабақ 36</h3>
+                    <p>Қазақ тілі 5 сынып</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <!-- Logo and Description -->
+        <div class="footer-section">
+            <a href="#" class="logo">Sha<span>byt</span></a>
+            <p>Біз балаларға математиканы оңай үйрену үшін осы платформаны жасадық.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+            <h3>Жылдам Сілтемелер</h3>
+            <ul>
+                <li><a href="#">Басты бет</a></li>
+                <li><a href="#">Сабақтар</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Контакт</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="footer-section">
+            <h3>Байланыс</h3>
+            <p><i class='bx bx-map'></i> Алматы, Қазақстан</p>
+            <p><i class='bx bx-phone'></i> +7 777 777 77 77</p>
+            <p><i class='bx bx-envelope'></i> info@shabyt.com</p>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-section">
+            <h3>Бізбен байланысу</h3>
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2025 Shabyt. Барлық құқықтар қорғалған.</p>
+    </div>
+</footer>
+
+    <!-- JavaScript -->
+    <script src="kaz9.js"></script>
+</body>
+</html>

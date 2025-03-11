@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Қазақстан тарихы 9-ші сынып</title>
+    <link rel="stylesheet" href="his9.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Қазақстан тарихы 9-ші сынып</h1>
+        <p>Барлық 80 сабақтарға арналған YouTube видео</p>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Сабақты іздеу..." onkeyup="filterLessons()">
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Lessons Section -->
+        <section class="lessons-section">
+            <h2>Сабақтар тізімі</h2>
+            <div class="lesson-grid">
+                <!-- Lesson 1 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=2juykLwObKY&list=PLlF7YqMKrQDBOnA5VFjstxPMH8UsNEPQ1&index=5')">
+                    <h3>Сабақ 1</h3>
+                    <p>Қазақстан тарихы 5 сынып, 1 сабақ</p>
+                </div>
+                <!-- Lesson 2 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=bVhuXuosoD0&list=PLlF7YqMKrQDBOnA5VFjstxPMH8UsNEPQ1&index=4')">
+                    <h3>Сабақ 2</h3>
+                    <p>Қазақстан тарихы 5 сынып, 2 сабақ</p>
+                </div>
+                <!-- Lesson 3 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=4ysA7bL0cdk&list=PLlF7YqMKrQDBOnA5VFjstxPMH8UsNEPQ1&index=3')">
+                    <h3>Сабақ 3</h3>
+                    <p>Қазақстан Тарихы, 5 сынып, 3 сабақ</p>
+                </div>
+                <!-- Lesson 4 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=qaRU6owjpXQ&list=PLlF7YqMKrQDBOnA5VFjstxPMH8UsNEPQ1&index=2')">
+                    <h3>Сабақ 4</h3>
+                    <p>Қазақстан Тарихы, 5 сынып, 4 сабақ</p>
+                </div>
+                <!-- Lesson 5 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=nupTDBlAQEA&list=PLlF7YqMKrQDBOnA5VFjstxPMH8UsNEPQ1&index=1')">
+                    <h3>Сабақ 5</h3>
+                    <p>Қазақстан Тарихы, 5 сынып, 5 сабақ</p>
+                </div>
+                <!-- Lesson 6 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=wC9E4AJ5eI8&list=PLlF7YqMKrQDBOnA5VFjstxPMH8UsNEPQ1&index=14')">
+                    <h3>Сабақ 6</h3>
+                    <p>Қазақстан Тарихы, 5 сынып, 6 сабақ</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=ytgGInbPpjQ&list=PLlF7YqMKrQDBOnA5VFjstxPMH8UsNEPQ1&index=13')">
+                    <h3>Сабақ 7</h3>
+                    <p>Қазақстан тарихы, 5 сынып, 7 сабақ</p>
+                </div>
+                <!-- Lesson 8 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=kxhfpJjHF8E&list=PLlF7YqMKrQDBOnA5VFjstxPMH8UsNEPQ1&index=12')">
+                    <h3>Сабақ 8</h3>
+                    <p>Қазақстан тарихы, 5 сынып, 8 сабақ</p>
+                </div>
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=1LN7NMCAFvU&list=PLlF7YqMKrQDBOnA5VFjstxPMH8UsNEPQ1&index=11')">
+                    <h3>Сабақ 9</h3>
+                    <p>Қазақстан тарихы, 5 сынып, 9 сабақ</p>
+                </div>
+                <!-- Lesson 2 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=1PhvM2gxETA&list=PLlF7YqMKrQDBOnA5VFjstxPMH8UsNEPQ1&index=10')">
+                    <h3>Сабақ 10</h3>
+                    <p>Қазақстан тарихы, 5 сынып, 10 сабақ</p>
+                </div>
+                <!-- Lesson 3 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=7UzcvL6lO3c&list=PLlF7YqMKrQDBOnA5VFjstxPMH8UsNEPQ1&index=9')">
+                    <h3>Сабақ 11</h3>
+                    <p>Қазақстан тарихы, 5 сынып, 11 сабақ</p>
+                </div>
+                <!-- Lesson 4 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=vh9AO21XhTQ&list=PLlF7YqMKrQDBOnA5VFjstxPMH8UsNEPQ1&index=8')">
+                    <h3>Сабақ 12</h3>
+                    <p>Қазақстан тарихы, 5 сынып, 12 сабақ</p>
+                </div>
+                <!-- Lesson 5 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=XuUNBtfwLi8&list=PLlF7YqMKrQDBOnA5VFjstxPMH8UsNEPQ1&index=7')">
+                    <h3>Сабақ 13</h3>
+                    <p>Қазақстан тарихы, 5 сынып, 13 сабақ</p>
+                </div>
+                <!-- Lesson 6 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=vB3cTfS_l58&list=PLlF7YqMKrQDBOnA5VFjstxPMH8UsNEPQ1&index=6')">
+                    <h3>Сабақ 14</h3>
+                    <p>Қазақстан тарихы, 5 сынып, 14 сабақ</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <!-- Logo and Description -->
+        <div class="footer-section">
+            <a href="#" class="logo">Sha<span>byt</span></a>
+            <p>Біз балаларға математиканы оңай үйрену үшін осы платформаны жасадық.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+            <h3>Жылдам Сілтемелер</h3>
+            <ul>
+                <li><a href="#">Басты бет</a></li>
+                <li><a href="#">Сабақтар</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Контакт</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="footer-section">
+            <h3>Байланыс</h3>
+            <p><i class='bx bx-map'></i> Алматы, Қазақстан</p>
+            <p><i class='bx bx-phone'></i> +7 777 777 77 77</p>
+            <p><i class='bx bx-envelope'></i> info@shabyt.com</p>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-section">
+            <h3>Бізбен байланысу</h3>
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2025 Shabyt. Барлық құқықтар қорғалған.</p>
+    </div>
+</footer>
+
+    <!-- JavaScript -->
+    <script src="his9.js"></script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Орыс тілі 9-ші сынып</title>
+    <link rel="stylesheet" href="rus9.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Орыс тілі 9-ші сынып</h1>
+        <p>Барлық 80 сабақтарға арналған YouTube видео</p>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Сабақты іздеу..." onkeyup="filterLessons()">
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Lessons Section -->
+        <section class="lessons-section">
+            <h2>Сабақтар тізімі</h2>
+            <div class="lesson-grid">
+                <!-- Lesson 1 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=TVIzzAfHMGA&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=49')">
+                    <h3>Урок 1</h3>
+                    <p>Поэты и писатели об осени</p>
+                </div>
+                <!-- Lesson 2 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=TW9X3TwaAMY&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=48')">
+                    <h3>Урок 2</h3>
+                    <p>Природа зимой</p>
+                </div>
+                <!-- Lesson 3 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=Q8FIkqdQGHM&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=47')">
+                    <h3>Урок 3</h3>
+                    <p>Сочинение по картине</p>
+                </div>
+                <!-- Lesson 4 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=awdYnaJzVhk&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=46')">
+                    <h3>Урок 4</h3>
+                    <p>Природа в устном народном творчестве</p>
+                </div>
+                <!-- Lesson 5 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=rxKpr8mOe8o&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=45')">
+                    <h3>Урок 5</h3>
+                    <p>Стили речи</p>
+                </div>
+                <!-- Lesson 6 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=GfBHs5fz2SU&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=44')">
+                    <h3>Урок 6</h3>
+                    <p>Разговорный стиль</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=N3omhg3YaOE&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=43')">
+                    <h3>Урок 7</h3>
+                    <p>Художественный стиль</p>
+                </div>
+                <!-- Lesson 8 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=X5aMZegGzjs&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=42')">
+                    <h3>Урок 8</h3>
+                    <p>Приметы в природе</p>
+                </div>
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=_5TE_sbU01w&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=41')">
+                    <h3>Урок 9</h3>
+                    <p>Мир живой природы</p>
+                </div>
+                <!-- Lesson 2 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=_b9j6ayvnnc&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=40')">
+                    <h3>Урок 10</h3>
+                    <p>Природа Казахстана</p>
+                </div>
+                <!-- Lesson 3 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=nDJ2mSamrQs&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=39')">
+                    <h3>Урок 11</h3>
+                    <p>Прекрасное в природе</p>
+                </div>
+                <!-- Lesson 4 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=96D9rH-nwvI&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=38')">
+                    <h3>Урок 12</h3>
+                    <p>Мы и природа</p>
+                </div>
+                <!-- Lesson 5 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=n6vqD5ox7i4&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=37')">
+                    <h3>Урок 13</h3>
+                    <p>Как охранять природу</p>
+                </div>
+                <!-- Lesson 6 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=AqGHeU2yBs8&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=36')">
+                    <h3>Урок 14</h3>
+                    <p>Папа, Мама я – вместе дружная семья</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=QMP0_A8ft70&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=35')">
+                    <h3>Урок 15</h3>
+                    <p>Повествовать – значит рассказывать</p>
+                </div>
+                <!-- Lesson 8 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=MxdH-zwGrp0&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=34')">
+                    <h3>Урок 16</h3>
+                    <p>Описание – это «словесное рисование»</p>
+                </div>
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=uGo50vWqAN4&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=33')">
+                    <h3>Урок 17</h3>
+                    <p>Что за прелесть эти сказки</p>
+                </div>
+                <!-- Lesson 2 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=6eJrgdyuaGo&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=32')">
+                    <h3>Урок 18</h3>
+                    <p>Рассуждать –значит доказывать</p>
+                </div>
+                <!-- Lesson 3 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=Vi6BDR4nJGY&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=31')">
+                    <h3>Урок 19</h3>
+                    <p>Какие мы в нашей семье</p>
+                </div>
+                <!-- Lesson 4 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=S-ao6V1HSAI&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=30')">
+                    <h3>Урок 20</h3>
+                    <p>«Дружба – это дар»</p>
+                </div>
+                <!-- Lesson 5 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=4mC6v7kQVyo&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=29')">
+                    <h3>Урок 21</h3>
+                    <p>Учимся дружить</p>
+                </div>
+                <!-- Lesson 6 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=y_7RLHJ5wDo&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=28')">
+                    <h3>Урок 22</h3>
+                    <p>Мы с приятелем друзья</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=9ogPUS3GWVY&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=27')">
+                    <h3>Урок 23</h3>
+                    <p>Много у меня друзей</p>
+                </div>
+                <!-- Lesson 8 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=eL2RZXNEmA4&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=26')">
+                    <h3>Урок 24</h3>
+                    <p>Вместе весело шагать!</p>
+                </div>
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=GVSyFQAejJ4&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=25')">
+                    <h3>Урок 25</h3>
+                    <p>Друзья познаются в беде</p>
+                </div>
+                <!-- Lesson 5 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=z2p7c-kG24s&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=24')">
+                    <h3>Урок 26</h3>
+                    <p>Мы разные, но мы вместе</p>
+                </div>
+                <!-- Lesson 6 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=YY8z51vOu2s&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=23')">
+                    <h3>Урок 27</h3>
+                    <p>Мой друг</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=MJJOQyI7HTQ&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=22')">
+                    <h3>Урок 28</h3>
+                    <p>Дружба–богатство бесценное</p>
+                </div>
+                <!-- Lesson 5 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=ZCUdDwAaMrQ&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=21')">
+                    <h3>Урок 29</h3>
+                    <p>Сочинение по картине Е.Н Широкова «Друзья»</p>
+                </div>
+                <!-- Lesson 6 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=dMvaurMk3W8&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=20')">
+                    <h3>Урок 30</h3>
+                    <p>Кем быть</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=7zPBPUKA3jw&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=19')">
+                    <h3>Урок 31</h3>
+                    <p>Чем пахнут ремёсла</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=aUbyAfia4e0&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=18')">
+                    <h3>Урок 32</h3>
+                    <p>Первые профессии</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=6hoOkmKGoWk&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=17')">
+                    <h3>Урок 33</h3>
+                    <p>На земле очень много профессий</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=jJBi9fEbfwE&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=16')">
+                    <h3>Урок 34</h3>
+                    <p>Встреча с интересными людьми</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=tImivDkzeWg&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=15')">
+                    <h3>Урок 35</h3>
+                    <p>Профессии любимых героев</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=ISYy-jBDwLQ&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=14')">
+                    <h3>Урок 36</h3>
+                    <p>Искусство слова</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=Noj07Bi1JAc&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=13')">
+                    <h3>Урок 37</h3>
+                    <p>Литературная сказка</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=UAPXG1umnTw&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=12')">
+                    <h3>Урок 38</h3>
+                    <p>Искусство звука, сказка Мастер Али</p>
+                </div>
+                <!-- Lesson 7 -->
+                <div class="lesson-card" onclick="openVideo('https://www.youtube.com/watch?v=woBTiQBFTrQ&list=PLLM8C3ZxLEUxNCkIkLOReVLV8pSg5cYy6&index=11')">
+                    <h3>Урок 39</h3>
+                    <p>Струны Великой степи</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <!-- Logo and Description -->
+        <div class="footer-section">
+            <a href="#" class="logo">Sha<span>byt</span></a>
+            <p>Біз балаларға математиканы оңай үйрену үшін осы платформаны жасадық.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+            <h3>Жылдам Сілтемелер</h3>
+            <ul>
+                <li><a href="#">Басты бет</a></li>
+                <li><a href="#">Сабақтар</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Контакт</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="footer-section">
+            <h3>Байланыс</h3>
+            <p><i class='bx bx-map'></i> Алматы, Қазақстан</p>
+            <p><i class='bx bx-phone'></i> +7 777 777 77 77</p>
+            <p><i class='bx bx-envelope'></i> info@shabyt.com</p>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-section">
+            <h3>Бізбен байланысу</h3>
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2025 Shabyt. Барлық құқықтар қорғалған.</p>
+    </div>
+</footer>
+
+    <!-- JavaScript -->
+    <script src="rus9.js"></script>
+</body>
+</html>
